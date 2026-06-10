@@ -14,7 +14,7 @@ Every placeholder is a clearly-labeled block on the page. Swap each for a real p
 
 | # | Where on the page | What to drop in | Shape |
 |---|---|---|---|
-| 1 | **Hero** (the big arch) | Warm portrait of Christy with her guitar — her best band/press shot | Tall 3:4 |
+| 1 | **Hero** (the big arch) | ✅ Done — supplied portrait was background-removed (macOS Vision subject-lift), edge-feathered, and embedded as an inline WebP so the page stays a single file. For production, serve it as a real image file instead (see the `PRODUCTION-WIRING` comment at the hero figure). | Tall 3:4 |
 | 2 | Services → Living In Solution | Retreat-circle / teaching photo | Small arch, 3:3.6 |
 | 3 | Services → Retreats | NC foothills landscape (retreat setting) | Small arch |
 | 4 | Services → One-on-One Guidance | A one-on-one conversation photo | Small arch |
