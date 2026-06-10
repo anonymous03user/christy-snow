@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rev. Christy Snow — Spiritual Teacher, Retreat Guide &amp; Singer-Songwriter · Charlotte, NC</title>
+<meta name="description" content="Rev. Christy Snow is an ordained Science of Mind minister, retreat facilitator, coach, keynote speaker, and one of Charlotte's most celebrated singer-songwriters. Begin Living In Solution — her year-long course — or join her at a retreat, a keynote, or a live show.">
+<meta property="og:title" content="Rev. Christy Snow — Spiritual Teacher, Retreat Guide & Singer-Songwriter">
+<meta property="og:description" content="Retreats, the Living In Solution year-long course, one-on-one spiritual coaching, keynotes — and fourteen albums of folk, flute, and chant. Charlotte, NC.">
+<meta property="og:type" content="website">
+<!-- PRODUCTION-WIRING: add og:image (1200×630 social card with Christy's portrait) and og:url once the domain is pointed. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 60 V34 a18 18 0 0 1 36 0 V60 Z' fill='%23B9664C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   AUBADE — first light.
+   Palette: dawn ivory / warm sand / pre-dawn fir / ember rose /
+   eucalyptus / blush + apricot (hero sky) / horizon gold.
+   Type: Fraunces (display, SOFT axis up) + Newsreader (text).
+   ============================================================ */
+
+:root{
+  --ivory:#FBF7EF;
+  --sand:#F2EAE0;
+  --fir:#2F342C;
+  --ember:#B9664C;
+  --ember-deep:#A4583F;
+  --eucalyptus:#8FA08B;
+  --euc-text:#5C6E54; /* deep sage — used wherever sage must carry small text (AA contrast) */
+  --euc-wash:#DFE6DC;
+  --blush:#E9CDBC;
+  --apricot:#F7DCC4;
+  --gold:rgba(200,165,120,.5);
+  --gold-soft:rgba(200,165,120,.32);
+  --ink-soft:rgba(47,52,44,.72);
+  --pad-x:clamp(20px,5vw,48px);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth;scroll-padding-top:6rem}
+
+body{
+  font-family:'Newsreader',Georgia,'Times New Roman',serif;
+  font-optical-sizing:auto;
+  font-size:clamp(16.5px,1.1vw + 11px,18px);
+  line-height:1.7;
+  color:var(--fir);
+  background:var(--ivory);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img,svg{display:block;max-width:100%}
+
+::selection{background:var(--blush);color:var(--fir)}
+
+/* ---------- type system ---------- */
+
+h1,h2,h3,.display{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:300;
+  font-variation-settings:'SOFT' 100,'WONK' 0;
+  font-optical-sizing:auto;
+  line-height:1.06;
+  letter-spacing:-0.01em;
+}
+
+.eyebrow{
+  font-family:'Newsreader',serif;
+  font-weight:500;
+  font-size:.74rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+
+.kw{font-style:italic;color:var(--ember);font-variation-settings:'SOFT' 100,'WONK' 1}
+
+a{color:inherit;text-decoration:none}
+
+.tlink{ /* quiet text link: gold underline that draws on hover */
+  font-weight:500;
+  background-image:linear-gradient(var(--gold),var(--gold));
+  background-repeat:no-repeat;
+  background-size:100% 1px;
+  background-position:0 100%;
+  padding-bottom:3px;
+  transition:background-size .35s var(--ease),color .25s;
+}
+.tlink:hover,.tlink:focus-visible{
+  background-image:linear-gradient(var(--ember),var(--ember));
+  color:var(--ember);
+}
+
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
+
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:99;
+  background:var(--fir);color:var(--ivory);padding:.8em 1.4em;
+}
+.skip-link:focus{left:0}
+
+/* ---------- layout primitives ---------- */
+
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:var(--pad-x)}
+
+.section-head{margin-bottom:clamp(2.5rem,6vw,4.5rem)}
+.section-head .eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.1rem}
+.section-head .eyebrow::after{content:"";flex:0 0 34px;height:1px;background:var(--gold)}
+.section-head.center{text-align:center}
+.section-head.center .eyebrow{justify-content:center}
+.section-head.center .eyebrow::before{content:"";flex:0 0 34px;height:1px;background:var(--gold)}
+.section-head.center .lede{margin-inline:auto}
+.section-head h2{font-size:clamp(2rem,5vw,3.4rem)}
+.section-head .lede{max-width:34em;margin-top:1rem;color:var(--ink-soft);font-size:1.05em}
+
+/* hairline divider with a small rising sun-dot */
+.sundot{position:relative;height:1px;background:var(--gold-soft)}
+.sundot::after{
+  content:"";position:absolute;left:50%;top:50%;
+  width:9px;height:9px;border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:var(--ivory);
+  border:1px solid var(--gold);
+}
+
+/* ---------- buttons ---------- */
+
+.btn{
+  display:inline-flex;align-items:center;gap:.7em;
+  font-family:'Newsreader',serif;font-weight:500;
+  font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;
+  border:0;cursor:pointer;
+  transition:background-color .3s var(--ease),color .3s,border-color .3s;
+}
+.btn .arrow{transition:transform .3s var(--ease)}
+.btn:hover .arrow,.btn:focus-visible .arrow{transform:translateX(4px)}
+
+.btn-primary{
+  background:var(--ember);color:var(--ivory);
+  padding:1.05em 2em;border-radius:999px;
+}
+.btn-primary:hover,.btn-primary:focus-visible{background:var(--ember-deep)}
+
+.btn-ghost{
+  background:transparent;color:var(--fir);
+  border:1px solid var(--gold);
+  padding:.95em 1.8em;border-radius:999px;
+}
+.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--ember);color:var(--ember)}
+
+/* ---------- header ---------- */
+
+.site-head{
+  position:fixed;inset:0 0 auto 0;z-index:50;
+  transition:background-color .35s,border-color .35s,backdrop-filter .35s;
+  border-bottom:1px solid transparent;
+}
+.site-head.is-scrolled{
+  background:rgba(251,247,239,.88);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom-color:var(--gold-soft);
+}
+.site-head .bar{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.5rem;height:76px;
+}
+
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand .arch-mark{
+  width:22px;height:26px;flex:none;
+  background:var(--ember);
+  border-radius:999px 999px 0 0;
+}
+.brand .name{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.12rem;letter-spacing:.01em;white-space:nowrap;
+}
+
+.site-nav{display:flex;align-items:center;gap:clamp(1.2rem,2.5vw,2.2rem)}
+.site-nav a:not(.btn){
+  font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  background-image:linear-gradient(var(--ember),var(--ember));
+  background-repeat:no-repeat;background-size:0 1px;background-position:0 100%;
+  padding-bottom:4px;
+  transition:background-size .3s var(--ease);
+}
+.site-nav a:not(.btn):hover,.site-nav a:not(.btn):focus-visible{background-size:100% 1px}
+.site-nav .btn-primary{padding:.8em 1.5em;font-size:.72rem}
+
+.nav-toggle{
+  display:none;background:none;border:0;cursor:pointer;
+  width:44px;height:44px;position:relative;z-index:60;
+}
+.nav-toggle span{
+  position:absolute;left:10px;right:10px;height:1.5px;background:var(--fir);
+  transition:transform .35s var(--ease),opacity .25s,top .35s var(--ease);
+}
+.nav-toggle span:nth-child(1){top:17px}
+.nav-toggle span:nth-child(2){top:23px}
+.nav-toggle span:nth-child(3){top:29px}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){top:23px;transform:rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){top:23px;transform:rotate(-45deg)}
+
+@media (max-width:859px){
+  .nav-toggle{display:block}
+  .site-nav{
+    position:fixed;inset:0;z-index:55;
+    flex-direction:column;justify-content:center;align-items:center;gap:2.2rem;
+    background:var(--ivory);
+    opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s;
+  }
+  .site-nav.is-open{opacity:1;visibility:visible}
+  .site-nav a:not(.btn){font-size:1rem}
+}
+
+/* ---------- hero ---------- */
+
+.hero{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;
+  overflow:hidden;
+  padding-top:96px;padding-bottom:0;
+}
+
+/* the dawn sky — breathes on a slow 9.2s cycle */
+.hero::before{
+  content:"";position:absolute;inset:-12%;z-index:0;
+  background:
+    linear-gradient(180deg,rgba(143,160,139,.12) 0%,rgba(143,160,139,0) 26%),
+    radial-gradient(95% 70% at 62% 88%,var(--apricot) 0%,rgba(247,220,196,0) 60%),
+    radial-gradient(120% 90% at 45% 100%,var(--blush) 0%,rgba(233,205,188,0) 62%),
+    var(--ivory);
+  animation:breathe 9.2s ease-in-out infinite alternate;
+  transform-origin:50% 80%;
+}
+@keyframes breathe{
+  from{transform:scale(1);opacity:.85}
+  to{transform:scale(1.06);opacity:1}
+}
+
+/* fine grain so the light reads as air, not vector */
+.grain::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  opacity:.05;
+}
+
+.hero .wrap{
+  position:relative;z-index:2;width:100%;
+  display:grid;grid-template-columns:1fr;gap:2.5rem;
+  align-items:end;
+}
+
+.hero-copy{padding-bottom:clamp(2.5rem,7vh,5rem)}
+
+.hero-copy .eyebrow{
+  display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;
+}
+.hero-copy .eyebrow::before{content:"";width:26px;height:1px;background:var(--gold)}
+
+.hero h1{
+  font-size:clamp(2.7rem,8.5vw,5.6rem);
+  max-width:9.5em;
+}
+
+.hero .sub{
+  max-width:30em;margin-top:1.5rem;
+  font-size:clamp(1.02rem,1.4vw,1.16rem);
+  color:var(--ink-soft);
+}
+
+.hero-cta{
+  display:flex;align-items:center;flex-wrap:wrap;
+  gap:1.4rem 2rem;margin-top:2.4rem;
+}
+.hero-cta .note{display:block;font-size:.85rem;color:var(--ink-soft);font-style:italic;margin-top:.65rem}
+
+/* the arch portrait, seated on the horizon line */
+.hero-figure{position:relative;justify-self:center;width:min(68vw,300px)}
+.hero-figure::after{ /* the horizon — drawn from the arch's base out to both edges */
+  content:"";position:absolute;bottom:0;left:-100vw;right:-100vw;height:1px;
+  background:var(--gold);
+}
+
+.arch{
+  position:relative;
+  border-radius:999px 999px 0 0;
+  background:linear-gradient(180deg,var(--sand) 0%,var(--blush) 100%);
+  overflow:hidden;
+}
+.arch::before{ /* inset gold keyline */
+  content:"";position:absolute;inset:9px;z-index:1;
+  border:1px solid var(--gold);
+  border-radius:999px 999px 0 0;
+  pointer-events:none;
+}
+.arch .ph-label{
+  position:absolute;inset:0;z-index:0;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.5rem;
+  text-align:center;padding:1.8rem;
+  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:500;color:rgba(47,52,44,.55);
+}
+.arch .ph-label strong{font-weight:600;letter-spacing:.2em}
+.hero-figure .arch{aspect-ratio:3/4.1}
+
+.hero-figure figcaption{
+  margin-top:.9rem;text-align:center;
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-soft);font-weight:500;
+}
+
+@media (min-width:860px){
+  .hero .wrap{grid-template-columns:55fr 45fr;gap:3rem}
+  .hero-figure{justify-self:end;width:min(34vw,380px);margin-right:clamp(0px,4vw,56px)}
+  .hero-copy{padding-bottom:clamp(4rem,12vh,7.5rem)}
+}
+@media (max-width:859px){
+  .hero{padding-top:108px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-figure{order:-1;width:min(58vw,250px)}
+  .hero-copy{padding-bottom:3rem}
+}
+
+/* hero load choreography */
+[data-rise]{animation:rise 1.1s var(--ease) both}
+@keyframes rise{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
+}
+.hero [data-rise="1"]{animation-delay:.05s}
+.hero [data-rise="2"]{animation-delay:.2s}
+.hero [data-rise="3"]{animation-delay:.35s}
+.hero [data-rise="4"]{animation-delay:.5s}
+.hero [data-rise="5"]{animation-delay:.4s;animation-duration:1.4s}
+
+/* ---------- scroll reveals (JS adds .rv-pending, then .rv-in) ---------- */
+
+.rv-pending{opacity:0;transform:translateY(22px)}
+.rv-in{
+  opacity:1;transform:translateY(0);
+  transition:opacity .9s var(--ease),transform .9s var(--ease);
+}
+
+/* ---------- services — the order of service ledger ---------- */
+
+.services{padding:clamp(5.5rem,13vw,10.5rem) 0 clamp(4.5rem,10vw,8rem)}
+
+.ledger{border-bottom:1px solid var(--gold-soft)}
+
+.svc{
+  position:relative;
+  border-top:1px solid var(--gold-soft);
+  padding:clamp(2.4rem,6vw,4rem) clamp(.2rem,2vw,1.5rem);
+  display:grid;grid-template-columns:1fr;gap:1.6rem;
+  transition:background-color .4s var(--ease);
+}
+.svc:hover{background:rgba(233,205,188,.3)}
+
+.svc .ghost{
+  position:absolute;top:-.12em;left:-.18em;z-index:0;
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(4.2rem,11vw,8.5rem);line-height:1;
+  color:var(--fir);opacity:.06;pointer-events:none;user-select:none;
+}
+
+.svc-main{position:relative;z-index:1}
+.svc .tag{
+  font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+  color:var(--euc-text);margin-bottom:.8rem;
+}
+.svc h3{font-size:clamp(1.65rem,3.6vw,2.5rem)}
+.svc h3 a{transition:color .3s}
+.svc h3 a:hover{color:var(--ember)}
+
+.svc-side{position:relative;z-index:1;display:grid;gap:1.2rem;align-content:start}
+.svc-side p{color:var(--ink-soft);max-width:30em}
+.svc-side .cta-line{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+
+.svc .thumb{width:104px;flex:none}
+.svc .thumb .arch{aspect-ratio:3/3.6}
+.svc .thumb .ph-label{padding:.6rem;font-size:.52rem;letter-spacing:.1em}
+
+@media (min-width:860px){
+  .svc{grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+  .svc-side{grid-template-columns:1fr auto;align-items:center}
+  .svc-side .cta-line{grid-column:1}
+  .svc-side .thumb{grid-row:1/span 2;grid-column:2}
+}
+
+/* the lead feature — Living In Solution, set at roughly double scale */
+.svc.featured{padding-top:clamp(3.2rem,8vw,5.5rem);padding-bottom:clamp(3.2rem,8vw,5.5rem)}
+.svc.featured h3{font-size:clamp(2.4rem,6vw,4.4rem);max-width:10em}
+.svc.featured .ghost{font-size:clamp(5.5rem,15vw,11.5rem)}
+.svc.featured .svc-side p{max-width:32em}
+.svc.featured .thumb{width:148px}
+.svc.featured .next-circle{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:500;
+  color:var(--ember);
+}
+.svc.featured .next-circle::before{
+  content:"";width:7px;height:7px;border-radius:50%;background:var(--ember);
+}
+
+/* ---------- email capture — a note at first light ---------- */
+
+.connect{background:var(--euc-wash);padding:clamp(4.5rem,11vw,8.5rem) 0}
+.connect .wrap{display:grid;gap:2.8rem;align-items:center}
+.connect h2{font-size:clamp(2.1rem,5.5vw,3.6rem);font-style:italic}
+.connect .lede{color:var(--ink-soft);max-width:26em;margin-top:1rem}
+
+.note-form{display:grid;gap:1.8rem;max-width:30rem}
+.note-form label{
+  display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:500;color:var(--ink-soft);margin-bottom:.35rem;
+}
+.note-form input{
+  width:100%;background:transparent;border:0;
+  border-bottom:1px solid var(--gold);
+  font-family:'Newsreader',serif;font-size:1.1rem;color:var(--fir);
+  padding:.55em .1em;border-radius:0;
+  transition:border-color .3s;
+}
+.note-form input::placeholder{color:rgba(47,52,44,.38);font-style:italic}
+.note-form input:focus{outline:none;border-bottom:1.5px solid var(--ember)}
+
+.note-form .btn-primary{border-radius:999px 999px 6px 6px;justify-self:start;padding:1.15em 2.4em}
+.note-form .fine{font-size:.82rem;color:var(--ink-soft);font-style:italic}
+
+.form-success{
+  display:none;
+  font-family:'Fraunces',serif;font-style:italic;font-size:1.5rem;color:var(--fir);
+}
+.note-form.is-done form{display:none}
+.note-form.is-done .form-success{display:block}
+
+@media (min-width:860px){
+  .connect .wrap{grid-template-columns:1.05fr 1fr;gap:4rem}
+}
+
+/* ---------- about ---------- */
+
+.about{padding:clamp(5rem,12vw,9.5rem) 0}
+.about-grid{display:grid;gap:3rem}
+
+.bio-panel{
+  position:relative;
+  background:var(--sand);
+  padding:clamp(1.8rem,5vw,3.6rem);
+}
+.bio-panel::before{ /* offset gold keyline frame behind the panel */
+  content:"";position:absolute;inset:0;z-index:-1;
+  transform:translate(14px,14px);
+  border:1px solid var(--gold);
+}
+
+.bio-body{font-size:1.02em}
+.bio-body p+p{margin-top:1.2em}
+.bio-body .dropcap::first-letter{
+  font-family:'Fraunces',serif;font-weight:400;font-style:normal;
+  float:left;font-size:4.6em;line-height:.78;
+  padding:.06em .1em 0 0;color:var(--ember);
+}
+
+@media (min-width:980px){
+  .about-grid{grid-template-columns:1.5fr .9fr;gap:4.5rem;align-items:start}
+  .bio-body{columns:2;column-gap:52px;column-rule:1px solid var(--gold-soft)}
+}
+
+.about-figure{display:grid;gap:1.6rem;align-content:start}
+.about-figure .arch{aspect-ratio:3/3.8}
+.about-figure figcaption{
+  font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-soft);font-weight:500;text-align:center;
+}
+.cred-list{list-style:none;display:grid;gap:.55rem;font-size:.92rem;color:var(--ink-soft)}
+.cred-list li{display:flex;gap:.8rem;align-items:baseline}
+.cred-list li::before{content:"";flex:none;width:14px;height:1px;background:var(--gold);transform:translateY(-4px)}
+
+.pullquote{
+  margin:clamp(3.5rem,8vw,6rem) auto 0;max-width:30em;
+  text-align:center;padding:2.4rem 1rem;
+  border-top:1px solid var(--gold-soft);border-bottom:1px solid var(--gold-soft);
+}
+.pullquote p{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(1.5rem,3.5vw,2.2rem);line-height:1.3;
+}
+
+/* ---------- press ---------- */
+
+.press{padding:clamp(4.5rem,10vw,8rem) 0 clamp(5rem,11vw,9rem);text-align:center}
+.press .eyebrow{justify-content:center;display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem}
+.press .eyebrow::before,.press .eyebrow::after{content:"";width:30px;height:1px;background:var(--gold)}
+
+.press-rotator{position:relative;max-width:42rem;margin-inline:auto;min-height:9.5em}
+.press-item{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;gap:1.2rem;
+  opacity:0;
+  animation:pressfade 21s infinite;
+}
+.press-item:nth-child(2){animation-delay:7s}
+.press-item:nth-child(3){animation-delay:14s}
+@keyframes pressfade{
+  0%{opacity:0}
+  3.5%{opacity:1}
+  29%{opacity:1}
+  33.5%{opacity:0}
+  100%{opacity:0}
+}
+.press-item blockquote p{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(1.45rem,4vw,2.4rem);line-height:1.3;
+}
+.press-item cite{
+  font-style:normal;font-size:.76rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:500;color:var(--euc-text);
+}
+
+.press-outlets{
+  margin-top:2.5rem;
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;
+  color:var(--euc-text);
+  display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem 1.1rem;
+}
+.press-outlets span[aria-hidden]{color:var(--gold)}
+
+/* ---------- music — the evening set ---------- */
+
+.music{
+  position:relative;
+  background:var(--fir);color:var(--ivory);
+  padding:clamp(5rem,12vw,9.5rem) 0;
+}
+.music .section-head .eyebrow{color:rgba(251,247,239,.6)}
+.music .section-head .lede{color:rgba(251,247,239,.72)}
+.music .section-head h2 .kw{color:var(--blush)}
+
+.breathline{margin:0 auto clamp(2.5rem,6vw,4rem);width:min(420px,70vw);color:var(--gold)}
+.breathline path{
+  stroke:currentColor;stroke-width:1.5;fill:none;
+  stroke-dasharray:560;stroke-dashoffset:560;
+}
+.rv-in .breathline path,
+.breathline.rv-in path{animation:drawline 2.2s var(--ease) forwards}
+@keyframes drawline{to{stroke-dashoffset:0}}
+
+.album-list{list-style:none;border-bottom:1px solid rgba(200,165,120,.35)}
+.album{
+  display:grid;grid-template-columns:auto 1fr;gap:1.1rem 1.5rem;align-items:center;
+  border-top:1px solid rgba(200,165,120,.35);
+  padding:1.5rem clamp(.2rem,2vw,1.2rem);
+  transition:background-color .4s var(--ease);
+}
+.album:hover{background:rgba(251,247,239,.05)}
+.album .year{
+  font-size:.78rem;letter-spacing:.18em;font-weight:500;
+  color:rgba(251,247,239,.68);min-width:3.2em;
+}
+.album .cover{
+  width:56px;height:56px;flex:none;
+  border:1px solid var(--gold);
+  background:linear-gradient(135deg,rgba(233,205,188,.25),rgba(233,205,188,.08));
+  display:flex;align-items:center;justify-content:center;
+  font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(251,247,239,.62);text-align:center;padding:.3rem;
+}
+.album .title{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(1.15rem,2.4vw,1.5rem)}
+.album .kind{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(251,247,239,.68)}
+.album .note{font-style:italic;color:rgba(251,247,239,.7);font-size:.92rem}
+
+@media (min-width:860px){
+  .album{grid-template-columns:4.2em 56px 1.25fr 1fr auto}
+}
+@media (max-width:859px){
+  .album .year{grid-column:1}
+  .album .cover{grid-column:2;justify-self:end}
+  .album .title,.album .kind,.album .note{grid-column:1/-1}
+  .album{row-gap:.35rem}
+}
+
+.album-more{
+  border-top:1px solid rgba(200,165,120,.35);
+  padding:1.4rem clamp(.2rem,2vw,1.2rem);
+  font-style:italic;color:rgba(251,247,239,.65);
+}
+
+.stream-row{
+  display:flex;flex-wrap:wrap;gap:.9rem;align-items:center;
+  margin-top:clamp(2.2rem,5vw,3.2rem);
+}
+.stream-row .lead{
+  font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500;
+  color:rgba(251,247,239,.6);margin-right:.4rem;
+}
+.pill{
+  display:inline-flex;align-items:center;gap:.5em;
+  border:1px solid rgba(200,165,120,.55);border-radius:999px;
+  padding:.7em 1.4em;
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+  color:var(--ivory);
+  transition:background-color .3s,border-color .3s,color .3s;
+}
+.pill:hover,.pill:focus-visible{background:rgba(200,165,120,.18);border-color:var(--gold)}
+
+/* ---------- dawn returns (transition strip) + live ---------- */
+
+.sunrise{
+  height:clamp(110px,20vw,200px);
+  background:linear-gradient(180deg,var(--fir) 0%,#6A5A48 36%,var(--blush) 68%,var(--ivory) 100%);
+}
+
+.live{padding:clamp(1.5rem,5vw,3.5rem) 0 clamp(5rem,12vw,9rem)}
+
+.ticket{
+  position:relative;
+  max-width:880px;margin-inline:auto;
+  background:var(--sand);
+  border:1px solid var(--gold);
+  display:grid;grid-template-columns:1fr;
+}
+.ticket .stub{
+  padding:clamp(1.8rem,4vw,2.8rem);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.2rem;
+  text-align:center;
+}
+.ticket .stub .mo{font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;font-weight:500;color:var(--ember)}
+.ticket .stub .day{
+  font-family:'Fraunces',serif;font-weight:300;font-size:clamp(4rem,10vw,6.5rem);line-height:.95;
+}
+.ticket .stub .yr{font-size:.78rem;letter-spacing:.26em;font-weight:500;color:var(--ink-soft)}
+
+.ticket .perf{position:relative;border-top:1px dashed rgba(47,52,44,.32)}
+.ticket .perf::before,.ticket .perf::after{
+  content:"";position:absolute;width:22px;height:22px;border-radius:50%;
+  background:var(--ivory);border:1px solid var(--gold);
+}
+
+.ticket .deets{padding:clamp(1.8rem,4vw,2.8rem);display:grid;gap:.7rem;align-content:center}
+.ticket .deets .what{font-family:'Fraunces',serif;font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:400}
+.ticket .deets .where,.ticket .deets .when{
+  font-size:.84rem;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--ink-soft);
+}
+.ticket .deets .with{font-style:italic;color:var(--ink-soft)}
+.ticket .deets .row{display:flex;flex-wrap:wrap;gap:1rem 1.8rem;margin-top:1rem;align-items:center}
+
+@media (min-width:760px){
+  .ticket{grid-template-columns:240px 1px 1fr}
+  .ticket .perf{border-top:0;border-left:1px dashed rgba(47,52,44,.32)}
+  .ticket .perf::before{top:-11px;left:-11px}
+  .ticket .perf::after{bottom:-11px;left:-11px}
+}
+@media (max-width:759px){
+  .ticket .perf::before{top:-11px;left:14%}
+  .ticket .perf::after{top:-11px;right:14%}
+}
+
+.live .more-dates{text-align:center;margin-top:2.2rem;color:var(--ink-soft);font-style:italic}
+
+/* ---------- footer ---------- */
+
+.site-foot{
+  border-top:1px solid var(--gold-soft);
+  padding:clamp(4rem,9vw,6.5rem) 0 2.5rem;
+}
+.foot-top{display:grid;gap:3rem;margin-bottom:clamp(3rem,7vw,5rem)}
+.foot-id .arch-mark{
+  width:30px;height:36px;background:var(--ember);
+  border-radius:999px 999px 0 0;margin-bottom:1.2rem;
+}
+.foot-id .sig{
+  font-family:'Fraunces',serif;font-style:italic;font-weight:300;
+  font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.2;
+}
+.foot-id .tag{color:var(--ink-soft);margin-top:.8rem;max-width:22em}
+
+.foot-cols{display:grid;gap:2.4rem;grid-template-columns:repeat(2,1fr)}
+.foot-cols h4{
+  font-family:'Newsreader',serif;font-size:.72rem;letter-spacing:.22em;
+  text-transform:uppercase;font-weight:500;color:var(--euc-text);
+  margin-bottom:1.1rem;
+}
+.foot-cols ul{list-style:none;display:grid;gap:.6rem;font-size:.95rem}
+.foot-cols .ext::after{content:" ↗";font-size:.8em;color:var(--eucalyptus)}
+
+@media (min-width:860px){
+  .foot-top{grid-template-columns:1.1fr 1.6fr}
+  .foot-cols{grid-template-columns:repeat(4,1fr)}
+}
+
+.foot-line{
+  border-top:1px solid var(--gold-soft);
+  padding-top:1.6rem;
+  display:flex;flex-wrap:wrap;gap:.8rem 2rem;justify-content:space-between;
+  font-size:.8rem;color:var(--ink-soft);
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-rise]{opacity:1;transform:none}
+  .rv-pending{opacity:1;transform:none}
+  .breathline path{stroke-dashoffset:0}
+  .press-rotator{min-height:0;display:grid;gap:3rem}
+  .press-item{position:static;opacity:1}
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#work">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Rev. Christy Snow — home">
+      <span class="arch-mark" aria-hidden="true"></span>
+      <span class="name">Rev. Christy Snow</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="#work">The Work</a>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#live">Live</a>
+      <a href="#connect">Connect</a>
+      <a class="btn btn-primary" href="#living">Begin the Year <span class="arrow" aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero grain" aria-label="Introduction">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow" data-rise="1">Minister · Musician · Retreat Guide</p>
+      <h1 data-rise="2">Free to be your <span class="kw">authentic</span> self.</h1>
+      <p class="sub" data-rise="3">Rev. Christy Snow is an ordained Science of&nbsp;Mind minister and one of Charlotte&rsquo;s most celebrated singer-songwriters. For more than three decades she has helped people come home to themselves&nbsp;&mdash; through retreats, teaching, coaching, and song.</p>
+      <div class="hero-cta" data-rise="4">
+        <div>
+          <a class="btn btn-primary" href="#living">Begin Living in Solution <span class="arrow" aria-hidden="true">→</span></a>
+          <span class="note">A year-long course &middot; now accepting inquiries</span>
+        </div>
+        <a class="tlink" href="#music">or just listen&nbsp;↓</a>
+      </div>
+    </div>
+
+    <figure class="hero-figure" data-rise="5">
+      <div class="arch" role="img" aria-label="Placeholder for a hero portrait of Christy Snow">
+        <span class="ph-label" aria-hidden="true">
+          <strong>[ Hero portrait ]</strong>
+          replace with a warm portrait of Christy with her guitar
+        </span>
+      </div>
+      <figcaption>Rev. Christy Snow &mdash; Charlotte, NC</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ SERVICES — the order of service ============ -->
+<section class="services" id="work" aria-label="Offerings">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">The Work</p>
+      <h2>Four ways <span class="kw">in</span>.</h2>
+      <p class="lede">Retreats, teaching, and one-on-one guidance for people ready to live in solution&nbsp;&mdash; not in struggle.</p>
+    </header>
+
+    <div class="ledger">
+
+      <!-- 01 — the flagship, set at double scale -->
+      <article class="svc featured" id="living" data-reveal>
+        <span class="ghost" aria-hidden="true">01</span>
+        <div class="svc-main">
+          <p class="tag">Year-long course &middot; 12 retreat-style Saturdays</p>
+          <h3>Living In Solution</h3>
+        </div>
+        <div class="svc-side">
+          <div>
+            <p>One Saturday a month, for a full year&nbsp;&mdash; a small circle doing deep, sustained inner work with Rev.&nbsp;Christy in the North Carolina foothills. Built for the people who hold everyone else: ministers, coaches, therapists, yoga teachers, caregivers.</p>
+            <p style="margin-top:.9em">Built to leave you with a daily spiritual practice that survives real life, a community that knows you, and a steadier relationship with change itself.</p>
+            <!-- CONTENT-VERIFY: confirm next-cohort status with Christy before the pitch; if a circle
+                 genuinely is forming, "Next circle now forming" is the stronger line — restore it. -->
+            <p style="margin-top:1.4em"><span class="next-circle">Next circle &mdash; inquire to join</span></p>
+          </div>
+          <div class="thumb">
+            <div class="arch" role="img" aria-label="Placeholder for a retreat-circle photo">
+              <span class="ph-label" aria-hidden="true">[ retreat circle photo ]</span>
+            </div>
+          </div>
+          <p class="cta-line">
+            <!-- PRODUCTION-WIRING: point at a consultation-booking form or scheduler (e.g. Calendly) instead of mailto. -->
+            <a class="btn btn-primary" href="mailto:booking@christysnow.com?subject=Living%20In%20Solution%20%E2%80%94%20free%20consultation">Schedule a free consultation <span class="arrow" aria-hidden="true">→</span></a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="svc" data-reveal>
+        <span class="ghost" aria-hidden="true">02</span>
+        <div class="svc-main">
+          <p class="tag">Embracing Change &middot; VIP &middot; group &middot; couples</p>
+          <h3>Retreats</h3>
+        </div>
+        <div class="svc-side">
+          <p>Custom retreats&nbsp;&mdash; for one person at a crossroads, a couple, or a whole circle. Each retreat is shaped around what you&rsquo;re carrying: rest, clarity, grief, transition, joy.</p>
+          <div class="thumb">
+            <div class="arch" role="img" aria-label="Placeholder for a foothills retreat landscape photo">
+              <span class="ph-label" aria-hidden="true">[ foothills landscape ]</span>
+            </div>
+          </div>
+          <p class="cta-line">
+            <!-- PRODUCTION-WIRING: link to the retreat booking form (the working Wix form fields can be rebuilt here). -->
+            <a class="tlink" href="mailto:booking@christysnow.com?subject=Retreat%20inquiry">Plan your retreat&nbsp;→</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="svc" data-reveal>
+        <span class="ghost" aria-hidden="true">03</span>
+        <div class="svc-main">
+          <p class="tag">Spiritual coaching &middot; since 2005</p>
+          <h3>One-on-One Guidance</h3>
+        </div>
+        <div class="svc-side">
+          <p>Private sessions for the seasons when you need a steady companion&nbsp;&mdash; practical, compassionate spiritual mentoring grounded in two decades of practice.</p>
+          <div class="thumb">
+            <div class="arch" role="img" aria-label="Placeholder for a one-on-one conversation photo">
+              <span class="ph-label" aria-hidden="true">[ coaching photo ]</span>
+            </div>
+          </div>
+          <p class="cta-line">
+            <a class="tlink" href="mailto:booking@christysnow.com?subject=Coaching%20inquiry">Start the conversation&nbsp;→</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="svc" data-reveal>
+        <span class="ghost" aria-hidden="true">04</span>
+        <div class="svc-main">
+          <p class="tag">Keynotes &middot; Sunday talks &middot; interfaith services</p>
+          <h3>Speaking</h3>
+        </div>
+        <div class="svc-side">
+          <p>From Charlotte Pride to the Affiliated New Thought Network to Johnson &amp; Wales University and citywide interfaith services, Christy brings music and message to the stage&nbsp;&mdash; equal parts sermon and song, for spiritual centers across the U.S. and Canada.</p>
+          <div class="thumb">
+            <div class="arch" role="img" aria-label="Placeholder for a keynote stage photo">
+              <span class="ph-label" aria-hidden="true">[ keynote photo ]</span>
+            </div>
+          </div>
+          <p class="cta-line">
+            <a class="tlink" href="mailto:booking@christysnow.com?subject=Speaking%20invitation">Invite Christy&nbsp;→</a>
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMAIL CAPTURE ============ -->
+<section class="connect" id="connect" aria-label="Join the mailing list">
+  <div class="wrap">
+    <div data-reveal>
+      <p class="eyebrow" style="margin-bottom:1.1rem">Stay close</p>
+      <h2>A note at first light.</h2>
+      <p class="lede">An occasional letter from Christy&nbsp;&mdash; new music, retreat dates, and a few words to begin again by. No noise, ever.</p>
+    </div>
+    <div class="note-form" data-reveal>
+      <!-- PRODUCTION-WIRING: point this form at the email service (Mailchimp / Flodesk / Buttondown
+           embed or POST endpoint). The demo intercepts submit with JS and shows the success state. -->
+      <form id="signup" novalidate>
+        <div style="display:grid;gap:1.6rem">
+          <div>
+            <label for="f-name">First name</label>
+            <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Your first name">
+          </div>
+          <div>
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+          </div>
+          <button class="btn btn-primary" type="submit">Subscribe <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="fine">Occasional notes. Unsubscribe anytime.</p>
+        </div>
+      </form>
+      <p class="form-success" role="status">Welcome in. You&rsquo;re on the list.&nbsp;☼</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" aria-label="About Christy Snow">
+  <div class="wrap">
+    <header class="section-head" data-reveal>
+      <p class="eyebrow">Who she is</p>
+      <h2>Two callings. One <span class="kw">voice</span>.</h2>
+    </header>
+
+    <div class="about-grid">
+      <div class="bio-panel" data-reveal>
+        <div class="bio-body">
+          <p class="dropcap">Christy Snow has been standing in front of rooms since 1989 &mdash; first in the bars and coffeehouses of Charlotte, where <em>Creative Loafing</em> voted her one of the city&rsquo;s best female vocalists again and again; later in sanctuaries, retreat circles, and citywide interfaith gatherings. Somewhere along the way, the two stages became one.</p>
+          <p>An ordained minister in the Science of Mind tradition, she co-pastored the Spiritual Living Center of Charlotte for a decade before founding <strong>Awaken Spiritual Community</strong> in 2018, where she serves as spiritual director of a congregation that gathers online and in person. She has carried the same message &mdash; authenticity, equality, love &mdash; into seven years of interfaith leadership &mdash; including board service &mdash; with Mecklenburg Ministries, four years chairing Charlotte&rsquo;s citywide Interfaith Thanksgiving service, and advocacy alongside the Human Rights Campaign, Equality NC, and the Campaign for Southern Equality.</p>
+          <p>And always, there is the music: fourteen albums of acoustic folk, Native-style flute, chant, and meditation &mdash; self-taught on guitar and Native-style flute, with a voice that draws comparisons to k.d.&nbsp;lang, Natalie Merchant, and Tracy Chapman. Whether the room is a vineyard, a sanctuary, or a retreat circle in the foothills, the work is the same: helping people remember they are free.</p>
+        </div>
+      </div>
+
+      <div class="about-figure" data-reveal>
+        <figure>
+          <div class="arch" role="img" aria-label="Placeholder for a portrait of Rev. Christy teaching or in ministry">
+            <span class="ph-label" aria-hidden="true">
+              <strong>[ About portrait ]</strong>
+              replace with Rev. Christy teaching / in ministry
+            </span>
+          </div>
+          <figcaption style="margin-top:.9rem">In circle &mdash; Awaken Within Retreats</figcaption>
+        </figure>
+        <ul class="cred-list">
+          <li>Ordained Science of Mind minister</li>
+          <li>Founder &amp; spiritual director, Awaken Spiritual Community</li>
+          <li>Fourteen albums &middot; performing since 1989</li>
+          <li>Keynotes across the U.S. &amp; Canada</li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="pullquote" data-reveal>
+      <p>Spirituality without dogma.<br>Music without pretense.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="wrap"><div class="sundot" role="presentation"></div></div>
+
+<!-- ============ PRESS ============ -->
+<section class="press" aria-label="Press and recognition">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">What they say</p>
+
+    <!-- NOTE FOR PRODUCTION: these are recognition statements drawn from the audit, not verbatim
+         quotes; before launch, swap in exact pull-quotes from the original articles. The voice
+         comparison has no documented press source yet — source it or keep it attribution-free. -->
+    <div class="press-rotator">
+      <div class="press-item">
+        <blockquote><p>Voted one of Charlotte&rsquo;s best female vocalists &mdash; again and again.</p></blockquote>
+        <cite>Creative Loafing &middot; multiple years</cite>
+      </div>
+      <div class="press-item">
+        <blockquote><p>A voice that draws comparisons to k.d.&nbsp;lang, Natalie Merchant, and Tracy Chapman.</p></blockquote>
+        <cite>On her voice</cite>
+      </div>
+      <div class="press-item">
+        <blockquote><p>Featured: the Christy Snow Band and <em>Free To Be</em>.</p></blockquote>
+        <cite>Queen City Nerve &middot; Charlotte</cite>
+      </div>
+    </div>
+
+    <p class="press-outlets" aria-label="Featured in">
+      <span>Creative Loafing</span><span aria-hidden="true">·</span>
+      <span>Queen City Nerve</span><span aria-hidden="true">·</span>
+      <span>Indie-Music.com</span><span aria-hidden="true">·</span>
+      <span>Women On Air</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ MUSIC — the evening set ============ -->
+<section class="music grain" id="music" aria-label="Music">
+  <div class="wrap">
+    <svg class="breathline" data-reveal viewBox="0 0 520 44" aria-hidden="true" focusable="false">
+      <path d="M0,34 L86,34 C128,34 138,10 178,10 C218,10 228,34 268,34 C306,34 316,18 352,18 C388,18 398,34 436,34 L520,34"/>
+    </svg>
+
+    <header class="section-head center" data-reveal style="max-width:38em;margin-inline:auto">
+      <p class="eyebrow">The Evening Set</p>
+      <h2>The music <span class="kw">is</span> the ministry.</h2>
+      <p class="lede">Fourteen albums across three decades&nbsp;&mdash; acoustic folk, spiritual chant, Native-style flute, and guided meditation. Not merchandise; medicine. Stream it anywhere, or hear it live, where it breathes best.</p>
+    </header>
+
+    <ul class="album-list" data-reveal>
+      <li class="album">
+        <span class="year">2017</span>
+        <span class="cover" role="img" aria-label="Placeholder for the Path To Oneness album cover">[ art ]</span>
+        <span class="title">Path To Oneness</span>
+        <span class="kind">Spiritual chant</span>
+        <span class="note">the latest record</span>
+      </li>
+      <li class="album">
+        <span class="year">2016</span>
+        <span class="cover" role="img" aria-label="Placeholder for the Free To Be album cover">[ art ]</span>
+        <span class="title">Free To Be</span>
+        <span class="kind">Singer-songwriter</span>
+        <span class="note">as featured by Queen City Nerve</span>
+      </li>
+      <li class="album">
+        <span class="year">2014</span>
+        <span class="cover" role="img" aria-label="Placeholder for the Peaceful Journey album cover">[ art ]</span>
+        <span class="title">Peaceful Journey</span>
+        <span class="kind">Affirmation meditations</span>
+        <span class="note">for the quiet hours</span>
+      </li>
+      <li class="album">
+        <span class="year">2010</span>
+        <span class="cover" role="img" aria-label="Placeholder for the Attune To The Ancients album cover">[ art ]</span>
+        <span class="title">Attune To The Ancients</span>
+        <span class="kind">Native-style flute</span>
+        <span class="note">breath, made audible</span>
+      </li>
+    </ul>
+    <p class="album-more" data-reveal>&hellip;and ten more, 1995&ndash;2013 &mdash; find her music wherever you listen.</p>
+
+    <div class="stream-row" data-reveal>
+      <span class="lead">Listen on</span>
+      <a class="pill" href="https://open.spotify.com/artist/7k0OrJ6vGakNVvYkbrmWQx" target="_blank" rel="noopener">Spotify</a>
+      <a class="pill" href="https://music.apple.com/us/artist/christy-snow/198195224" target="_blank" rel="noopener">Apple Music</a>
+      <a class="pill" href="https://amazon.com/Christy-Snow/e/B001LHQOKQ" target="_blank" rel="noopener">Amazon Music</a>
+      <a class="pill" href="https://www.youtube.com/@christysnowmusic" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</section>
+
+<!-- dawn returns -->
+<div class="sunrise" role="presentation"></div>
+
+<!-- ============ LIVE ============ -->
+<section class="live" id="live" aria-label="Live shows">
+  <div class="wrap">
+    <header class="section-head center" data-reveal>
+      <p class="eyebrow">See her live</p>
+      <h2>The next <span class="kw">show</span>.</h2>
+    </header>
+
+    <div class="ticket" data-reveal>
+      <div class="stub">
+        <span class="mo">Jun &middot; Sat</span>
+        <span class="day">13</span>
+        <span class="yr">2026</span>
+      </div>
+      <div class="perf" role="presentation"></div>
+      <div class="deets">
+        <p class="what">Christy Snow Trio</p>
+        <p class="with">with guests KimNiption &amp; Katie</p>
+        <p class="where">Golden Road Vineyard &middot; State Road, NC</p>
+        <p class="when">5:00 &ndash; 8:00 PM</p>
+        <div class="row">
+          <!-- PRODUCTION-WIRING: keep the calendar on-site in the rebuild; this links to the live calendar for now. -->
+          <a class="btn btn-ghost" href="https://christysnow.com/calendar" target="_blank" rel="noopener">Full calendar <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="tlink" href="mailto:booking@christysnow.com?subject=Booking%20the%20Christy%20Snow%20Trio">Book the band&nbsp;→</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="more-dates" data-reveal>New dates added often &mdash; Charlotte, the foothills, and beyond.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER — one coherent hub ============ -->
+<footer class="site-foot" id="contact" aria-label="Footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-id" data-reveal>
+        <span class="arch-mark" aria-hidden="true"></span>
+        <p class="sig">Live free.</p>
+        <p class="tag">One home for everything Christy does&nbsp;&mdash; the teaching, the retreats, the community, and the music.</p>
+      </div>
+
+      <div class="foot-cols" data-reveal>
+        <div>
+          <h4>The Work</h4>
+          <ul>
+            <li><a class="tlink" href="#living">Living In Solution</a></li>
+            <li><a class="tlink" href="#work">Retreats</a></li>
+            <li><a class="tlink" href="#work">Coaching</a></li>
+            <li><a class="tlink" href="#work">Speaking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>The Community</h4>
+          <ul>
+            <li><a class="tlink ext" href="https://www.awakeningcarolina.org/" target="_blank" rel="noopener">Awaken Spiritual Community</a></li>
+            <li><a class="tlink ext" href="https://www.awakenwithin.me/" target="_blank" rel="noopener">Awaken Within Retreats</a></li>
+            <li><a class="tlink ext" href="https://www.youtube.com/channel/UC6x1ddlPQDsu6Q-m4d8lNOA" target="_blank" rel="noopener">Rev. Christy on YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Listen</h4>
+          <ul>
+            <li><a class="tlink ext" href="https://open.spotify.com/artist/7k0OrJ6vGakNVvYkbrmWQx" target="_blank" rel="noopener">Spotify</a></li>
+            <li><a class="tlink ext" href="https://music.apple.com/us/artist/christy-snow/198195224" target="_blank" rel="noopener">Apple Music</a></li>
+            <li><a class="tlink ext" href="https://amazon.com/Christy-Snow/e/B001LHQOKQ" target="_blank" rel="noopener">Amazon Music</a></li>
+            <li><a class="tlink ext" href="https://www.youtube.com/@christysnowmusic" target="_blank" rel="noopener">YouTube</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a class="tlink" href="mailto:booking@christysnow.com">booking@christysnow.com</a></li>
+            <li><a class="tlink ext" href="https://www.facebook.com/revchristysnow" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a class="tlink ext" href="https://www.instagram.com/awakenwithinretreats/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a class="tlink" href="#connect">Join the mailing list</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-line">
+      <span>&copy; 2026 Christy Snow &middot; Charlotte, NC</span>
+      <span>Design concept &mdash; offerings, press &amp; events are real; copy is draft for Christy&rsquo;s review; photos are placeholders.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ------------------------------------------------------------------
+   Small, dependency-free enhancements. Everything works without JS —
+   these only add the header state, mobile menu, scroll reveals, and
+   the demo form's success state.
+------------------------------------------------------------------- */
+(function(){
+  "use strict";
+
+  /* header gains a translucent ivory backdrop after the first scroll */
+  var head = document.querySelector(".site-head");
+  function onScroll(){ head.classList.toggle("is-scrolled", window.scrollY > 24); }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* mobile menu */
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  toggle.addEventListener("click", function(){
+    var open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    document.body.style.overflow = open ? "hidden" : "";
+  });
+  nav.addEventListener("click", function(e){
+    if (e.target.closest("a")) {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded","false");
+      document.body.style.overflow = "";
+    }
+  });
+
+  /* scroll reveals — elements are visible by default; JS opts them in */
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var targets = document.querySelectorAll("[data-reveal]");
+  if (!reduce && "IntersectionObserver" in window) {
+    targets.forEach(function(el){ el.classList.add("rv-pending"); });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add("rv-in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, {rootMargin:"0px 0px -8% 0px", threshold:0.08});
+    targets.forEach(function(el){ io.observe(el); });
+  }
+
+  /* demo form: intercept submit and show the success state.
+     PRODUCTION-WIRING: replace this handler with the email service's
+     embed/POST (Mailchimp, Flodesk, Buttondown…) — markup stays as-is. */
+  var box = document.querySelector(".note-form");
+  var form = document.getElementById("signup");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var email = document.getElementById("f-email");
+    if (!email.value || !/.+@.+\..+/.test(email.value)) {
+      email.focus();
+      email.style.borderBottomColor = "var(--ember)";
+      return;
+    }
+    box.classList.add("is-done");
+  });
+})();
+</script>
+</body>
+</html>
