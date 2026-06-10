@@ -7,24 +7,26 @@ to system serifs offline.
 
 ---
 
-## A. Placeholder images to supply before presenting
+## A. Images — all 10 slots are now filled with real assets
 
-Every placeholder is a clearly-labeled block on the page. Swap each for a real photo
-(keep roughly the noted shape/crop):
+Every image is embedded inline (WebP data URI) so the demo stays one portable file.
+Nothing is hotlinked from her live sites. Sources and treatments:
 
-| # | Where on the page | What to drop in | Shape |
+| # | Slot | What's in it now | Notes |
 |---|---|---|---|
-| 1 | **Hero** (the big arch) | Warm portrait of Christy with her guitar — her best band/press shot | Tall 3:4 |
-| 2 | Services → Living In Solution | Retreat-circle / teaching photo | Small arch, 3:3.6 |
-| 3 | Services → Retreats | NC foothills landscape (retreat setting) | Small arch |
-| 4 | Services → One-on-One Guidance | A one-on-one conversation photo | Small arch |
-| 5 | Services → Speaking | Keynote / stage photo (Charlotte Pride, interfaith service…) | Small arch |
-| 6 | About (side arch) | Rev. Christy teaching or in ministry | Tall arch, 3:3.8 |
-| 7–10 | Music list (4 squares) | Album art: *Path To Oneness*, *Free To Be*, *Peaceful Journey*, *Attune To The Ancients* | Small squares, 56px |
+| 1 | Hero arch | Supplied portrait, background-removed (macOS Vision subject-lift) + edge-feathered into the dawn gradient | — |
+| 2 | Living In Solution | Outdoor retreat-practice circle (from awakenwithin.me) | Good fit for "retreat-style Saturdays" |
+| 3 | Retreats | Cabin + hammock in the woods (from awakenwithin.me) | ⚑ Likely stock on her Wix site — an authentic photo of her real venue (Riversong Cabins, Elkin NC) would beat it |
+| 4 | One-on-One Guidance | "Coaching Christy" portrait (from awakenwithin.me) | A candid two-person shot would read even more "1:1" |
+| 5 | Speaking | **Interfaith Thanksgiving service, 2014** (per your pick), cropped to the podium side and warm-duotoned (espresso/ivory) to blend with the palette | Original is B&W, 564×196 — low-res but fine at thumb size |
+| 6 | About arch | Stage close-up at the mic (christysnow.com), purple stage-light cast warm-balanced to match the page | The flute close-up candidate was tried first but it's an extreme hands-detail shot — face is soft-focus, doesn't read as a portrait |
+| 7 | Path To Oneness | Supplied elephant artwork | — |
+| 8–10 | Free To Be / Peaceful Journey / Attune To The Ancients | 600² covers from her site's CDN | — |
 
-Implementation: each placeholder is a `div.arch` / `span.cover` — replace the inner
-label with an `<img>` (add real `alt` text), or set the photo as a `background-image`
-on the block. The arch mask and gold keyline already handle the styling.
+**Licensing:** these are Christy's own promotional photos and album art — fine for
+her rebuild pitch, but confirm photographer credits/usage rights before launch.
+For production, serve images as real files with `srcset` instead of inline base64
+(see `PRODUCTION-WIRING` comments).
 
 Also worth supplying for production (not blocking the demo): a 1200×630 social-share
 card (`og:image`) and exact pull-quotes from the Creative Loafing / Queen City Nerve
