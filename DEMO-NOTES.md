@@ -88,7 +88,8 @@ Each spot is marked in the source with a `<!-- PRODUCTION-WIRING: ... -->` comme
 - **Hierarchy flipped:** the year-long course is the hero CTA and the double-scale
   lead feature; music is one elegant dark section, not a wall of $10 CDs.
 - **One hub:** footer unifies all four web properties + streaming + socials, with one
-  clickable contact email (her current site's email isn't even a link).
+  clear "Booking & contact" path (her current site's contact email isn't even a link —
+  and clicking around the demo never opens an email client or dumps you off-site).
 - **Fixes the audit's technical debt by example:** `lang` attribute, one `h1`, real
   meta description, favicon, alt text/ARIA on imagery, AA color contrast,
   `prefers-reduced-motion` support, mobile-first layout.
