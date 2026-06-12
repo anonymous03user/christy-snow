@@ -35,7 +35,32 @@ flagged with an HTML comment, and should be upgraded to verbatim quotes before l
 (The k.d. lang / Natalie Merchant / Tracy Chapman voice comparison comes from her bio
 materials, not a documented article — source it or keep it attribution-free.)
 
-## B. Where a real backend / booking gets wired in
+## B. The "still in the unmanifest" preview page (`preview.html`)
+
+Every link that used to open an email client (or eject to her old site) now lands on
+one shared, fully designed preview page. The top of the page is the same everywhere —
+*"This page is still in the unmanifest."* with a little ember sun waiting under the
+horizon line — and a swappable panel describes what that specific page becomes in the
+full build. A `?p=` URL parameter picks the blurb (plain JS, no build step; unknown or
+missing keys fall back to a generic blurb, so there's no way to break it).
+
+Current wiring (homepage link → preview variant):
+
+| Homepage link | URL | Blurb describes |
+|---|---|---|
+| "Schedule a free consultation" (Living In Solution) | `preview.html?p=living` | The course page: the year month by month + application that books the free consultation |
+| "Plan your retreat" | `preview.html?p=retreats` | The retreats funnel page → toward Living In Solution + simple inquiry |
+| "Start the conversation" (coaching) | `preview.html?p=coaching` | The coaching page + easy first-conversation booking |
+| "Invite Christy" (speaking) | `preview.html?p=speaking` | The speaking page + short booking form for organizers |
+| "Full calendar" (Live section) | `preview.html?p=calendar` | The on-site shows calendar (no more sending fans to a separate platform) |
+| "Book the band" | `preview.html?p=band` | The live-music booking page for venues & event hosts |
+| "Booking & contact" (footer) | `preview.html?p=contact` | The contact page: one working form instead of a copy-paste email |
+
+To add another variant: add a key to the `BLURBS` map at the bottom of `preview.html`
+and link to `preview.html?p=<key>`. Nav links and footer "The Work" links still scroll
+to their homepage sections (those sections exist, so no preview needed).
+
+## C. Where a real backend / booking gets wired in
 
 Each spot is marked in the source with a `<!-- PRODUCTION-WIRING: ... -->` comment:
 
@@ -43,23 +68,22 @@ Each spot is marked in the source with a `<!-- PRODUCTION-WIRING: ... -->` comme
    real `<form>` with name + email. Point it at Mailchimp / Flodesk / Buttondown
    (embed or POST endpoint) and delete the demo submit-handler in the `<script>` at
    the bottom. Labels, focus states, and the success state are already built.
-2. **Living In Solution CTA** ("Schedule a free consultation") — currently a `mailto:`
-   to booking@christysnow.com. Production: a consultation form or scheduler (Calendly
-   or similar), plus real next-cohort dates. The badge says "Next circle — inquire to
-   join" (true regardless of enrollment state); if Christy confirms a cohort is
-   actually forming, switch it to the stronger "Next circle now forming" (see the
-   `CONTENT-VERIFY` comment in the source).
-3. **Retreats CTA** ("Plan your retreat") — currently `mailto:`. Production: rebuild the
-   existing Awaken Within booking-form fields (name, email, phone, retreat type, dates)
-   on-site.
-4. **Coaching + Speaking CTAs** — currently `mailto:` with pre-filled subjects; could
-   stay mailto or become short inquiry forms.
-5. **"Full calendar" link** (Live section) — points at the existing
-   christysnow.com/calendar for now; in the rebuild the calendar lives on-site.
-6. **Analytics** — none included (it's a demo). Add GA4 / a privacy-friendly
+2. **Living In Solution CTA** — the preview link becomes a consultation form or
+   scheduler (Calendly or similar), plus real next-cohort dates. The badge says
+   "Next circle — inquire to join" (true regardless of enrollment state); if Christy
+   confirms a cohort is actually forming, switch it to the stronger "Next circle now
+   forming" (see the `CONTENT-VERIFY` comment in the source).
+3. **Retreats CTA** — the preview link becomes the on-site retreat booking form
+   (rebuild the existing Awaken Within fields: name, email, phone, retreat type, dates).
+4. **Coaching + Speaking CTAs** — preview links become short inquiry forms.
+5. **"Full calendar" / "Book the band"** — preview links become the on-site calendar
+   page and the live-music booking page.
+6. **Footer "Booking & contact"** — preview link becomes the contact page with a real
+   form posting to one inbox.
+7. **Analytics** — none included (it's a demo). Add GA4 / a privacy-friendly
    alternative at launch; her current site has zero tracking, an easy talking point.
 
-## C. Talking points baked into the demo (for the pitch meeting)
+## D. Talking points baked into the demo (for the pitch meeting)
 
 - **Hierarchy flipped:** the year-long course is the hero CTA and the double-scale
   lead feature; music is one elegant dark section, not a wall of $10 CDs.

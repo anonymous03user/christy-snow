@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Still taking form — Rev. Christy Snow</title>
+<meta name="description" content="A preview of a page from Rev. Christy Snow's full site.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M14 60 V34 a18 18 0 0 1 36 0 V60 Z' fill='%23B9664C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..600,0..100,0..1;1,9..144,300..600,0..100,0..1&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   AUBADE — "still in the unmanifest" preview page.
+   Same design system as index.html: dawn ivory, ember, gold
+   hairlines, Fraunces + Newsreader, the arch, the breath.
+   The one-page joke: the little ember sun sits BELOW the
+   horizon line — this page hasn't risen yet.
+   ============================================================ */
+
+:root{
+  --ivory:#FBF7EF;
+  --sand:#F2EAE0;
+  --fir:#2F342C;
+  --ember:#B9664C;
+  --ember-deep:#A4583F;
+  --eucalyptus:#8FA08B;
+  --euc-text:#5C6E54; /* deep sage — same small-text token as the homepage */
+  --euc-wash:#DFE6DC;
+  --blush:#E9CDBC;
+  --apricot:#F7DCC4;
+  --gold:rgba(200,165,120,.5);
+  --gold-soft:rgba(200,165,120,.32);
+  --ink-soft:rgba(47,52,44,.72);
+  --pad-x:clamp(20px,5vw,48px);
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:'Newsreader',Georgia,'Times New Roman',serif;
+  font-optical-sizing:auto;
+  font-size:clamp(16.5px,1.1vw + 11px,18px);
+  line-height:1.7;
+  color:var(--fir);
+  background:var(--ivory);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+::selection{background:var(--blush);color:var(--fir)}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
+
+h1{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:300;
+  font-variation-settings:'SOFT' 100,'WONK' 0;
+  font-optical-sizing:auto;
+  line-height:1.06;
+  letter-spacing:-0.01em;
+  font-size:clamp(2.3rem,6.5vw,4.2rem);
+  max-width:13em;
+  margin-inline:auto;
+}
+.kw{font-style:italic;color:var(--ember);font-variation-settings:'SOFT' 100,'WONK' 1}
+
+a{color:inherit;text-decoration:none}
+.tlink{
+  font-weight:500;
+  background-image:linear-gradient(var(--gold),var(--gold));
+  background-repeat:no-repeat;
+  background-size:100% 1px;
+  background-position:0 100%;
+  padding-bottom:3px;
+  transition:background-size .35s var(--ease),color .25s;
+}
+.tlink:hover,.tlink:focus-visible{
+  background-image:linear-gradient(var(--ember),var(--ember));
+  color:var(--ember);
+}
+
+.eyebrow{
+  font-weight:500;
+  font-size:.74rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+
+.btn{
+  display:inline-flex;align-items:center;gap:.7em;
+  font-family:'Newsreader',serif;font-weight:500;
+  font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;
+  border:0;cursor:pointer;
+  transition:background-color .3s var(--ease);
+}
+.btn .arrow{transition:transform .3s var(--ease)}
+.btn:hover .arrow,.btn:focus-visible .arrow{transform:translateX(-4px)}
+.btn-primary{
+  background:var(--ember);color:var(--ivory);
+  padding:1.05em 2em;border-radius:999px;
+}
+.btn-primary:hover,.btn-primary:focus-visible{background:var(--ember-deep)}
+
+/* ---------- header (brand only, returns home) ---------- */
+
+.site-head{position:fixed;inset:0 0 auto 0;z-index:50}
+.site-head .bar{
+  max-width:1180px;margin-inline:auto;padding-inline:var(--pad-x);
+  display:flex;align-items:center;height:76px;
+}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand .arch-mark{
+  width:22px;height:26px;flex:none;
+  background:var(--ember);
+  border-radius:999px 999px 0 0;
+}
+.brand .name{
+  font-family:'Fraunces',serif;font-weight:400;
+  font-size:1.12rem;letter-spacing:.01em;white-space:nowrap;
+}
+
+/* ---------- the page ---------- */
+
+.unmanifest{
+  position:relative;
+  min-height:100vh;min-height:100svh;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  padding:108px var(--pad-x) clamp(7rem,16vh,10rem);
+  text-align:center;
+}
+
+/* the dawn sky — same breath as the homepage hero */
+.unmanifest::before{
+  content:"";position:absolute;inset:-12%;z-index:0;
+  background:
+    linear-gradient(180deg,rgba(143,160,139,.12) 0%,rgba(143,160,139,0) 26%),
+    radial-gradient(95% 70% at 50% 92%,var(--apricot) 0%,rgba(247,220,196,0) 60%),
+    radial-gradient(120% 90% at 50% 100%,var(--blush) 0%,rgba(233,205,188,0) 62%),
+    var(--ivory);
+  animation:breathe 9.2s ease-in-out infinite alternate;
+  transform-origin:50% 85%;
+}
+@keyframes breathe{
+  from{transform:scale(1);opacity:.85}
+  to{transform:scale(1.06);opacity:1}
+}
+
+/* fine grain so the light reads as air, not vector */
+.grain::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  opacity:.05;
+}
+
+.unmanifest .inner{position:relative;z-index:2;max-width:46rem}
+
+.unmanifest .eyebrow{
+  display:flex;align-items:center;justify-content:center;gap:.9rem;
+  margin-bottom:1.4rem;
+}
+.unmanifest .eyebrow::before,
+.unmanifest .eyebrow::after{content:"";width:26px;height:1px;background:var(--gold)}
+
+.unmanifest .sub{
+  max-width:30em;margin:1.5rem auto 0;
+  font-size:clamp(1.02rem,1.4vw,1.16rem);
+  color:var(--ink-soft);
+}
+
+/* the not-yet-risen sun: a small ember arch held just under a gold horizon */
+.sunrise-mark{
+  position:relative;
+  width:120px;height:30px;
+  margin:clamp(2.2rem,5vh,3.2rem) auto;
+  overflow:hidden;
+}
+.sunrise-mark::before{ /* the horizon */
+  content:"";position:absolute;top:0;left:-200px;right:-200px;height:1px;
+  background:var(--gold);
+}
+.sunrise-mark .sun{
+  position:absolute;left:50%;top:7px;
+  width:26px;height:26px;
+  transform:translateX(-50%);
+  background:var(--ember);
+  border-radius:999px 999px 0 0;
+  opacity:.85;
+  animation:almost 9.2s ease-in-out infinite alternate;
+}
+@keyframes almost{ /* it stirs, but never quite rises — still in the unmanifest */
+  from{transform:translate(-50%,0)}
+  to{transform:translate(-50%,-4px)}
+}
+
+/* the swappable "what will live here" panel — same offset-keyline language as the bio panel */
+.will-live{
+  position:relative;
+  background:var(--sand);
+  padding:clamp(1.6rem,4vw,2.6rem) clamp(1.6rem,5vw,3rem);
+  max-width:36rem;
+  margin-inline:auto;
+  text-align:center;
+}
+.will-live::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  transform:translate(12px,12px);
+  border:1px solid var(--gold);
+}
+.will-live .slot{
+  font-weight:500;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--euc-text);
+  margin-bottom:.9rem;
+}
+.will-live p{color:var(--ink-soft);font-size:1.04em}
+
+.unmanifest .cta{
+  display:flex;align-items:center;justify-content:center;flex-wrap:wrap;
+  gap:1.3rem 2rem;
+  margin-top:clamp(2.4rem,5vh,3.4rem);
+}
+
+/* load choreography — same rise as the homepage hero */
+[data-rise]{animation:rise 1.1s var(--ease) both}
+@keyframes rise{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
+}
+[data-rise="1"]{animation-delay:.05s}
+[data-rise="2"]{animation-delay:.2s}
+[data-rise="3"]{animation-delay:.35s}
+[data-rise="4"]{animation-delay:.5s}
+[data-rise="5"]{animation-delay:.65s}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-rise]{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-head">
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="Rev. Christy Snow — back to home">
+      <span class="arch-mark" aria-hidden="true"></span>
+      <span class="name">Rev. Christy Snow</span>
+    </a>
+  </div>
+</header>
+
+<main class="unmanifest grain">
+  <div class="inner">
+    <p class="eyebrow" data-rise="1">Still taking form</p>
+    <h1 data-rise="2">This page is still in the <span class="kw">unmanifest</span>.</h1>
+    <p class="sub" data-rise="3">Everything takes form first as an idea in Mind &mdash; and this page is no exception. Its design is already chosen; the pixels are on their way.</p>
+
+    <div class="sunrise-mark" data-rise="4" role="presentation">
+      <span class="sun"></span>
+    </div>
+
+    <div class="will-live" data-rise="4">
+      <p class="slot" id="slot-label">In your full site</p>
+      <p id="slot-blurb">This opens into a fully designed page of its own. Every path in this demo leads somewhere finished &mdash; this one is simply still on its way.</p>
+    </div>
+
+    <div class="cta" data-rise="5">
+      <a class="btn btn-primary" href="index.html"><span class="arrow" aria-hidden="true">←</span> Return home</a>
+      <a class="tlink" href="index.html#work">or explore the offerings</a>
+    </div>
+  </div>
+</main>
+
+<script>
+/* Swap the "what will live here" blurb based on ?p= (or #hash).
+   One template, many destinations — no build step, no backend. */
+(function(){
+  "use strict";
+  var BLURBS = {
+    living: {
+      label: "Living In Solution",
+      blurb: "In your full site, this opens the Living In Solution page — the year’s journey laid out month by month, who it’s for, and a simple application that books your free consultation. One clear path from interest to enrollment."
+    },
+    retreats: {
+      label: "Retreats",
+      blurb: "In your full site, this opens into your retreats page — designed to gently guide visitors from curiosity toward your Living In Solution journey, with a simple way to inquire. A quiet funnel that turns interest into the right conversation."
+    },
+    coaching: {
+      label: "One-on-One Guidance",
+      blurb: "In your full site, this opens your coaching page — what working together looks like, who it serves, and an easy way to book a first conversation. No email back-and-forth required."
+    },
+    speaking: {
+      label: "Speaking",
+      blurb: "In your full site, this opens your speaking page — keynotes, Sunday talks, and interfaith services, with a short booking form so organizers can invite you in about two minutes."
+    },
+    band: {
+      label: "Live &amp; Booking",
+      blurb: "In your full site, this opens into your booking page — where venues and event hosts can see your performance offerings and reach out to book the band, all in one place."
+    },
+    calendar: {
+      label: "Calendar",
+      blurb: "In your full site, this opens your full calendar — every upcoming show on your own site, with dates, venues, and maps. No more sending fans off to a separate platform."
+    },
+    contact: {
+      label: "Contact",
+      blurb: "In your full site, this becomes your contact page — one warm, working form for booking, retreats, and press, in place of a copy-and-paste email address. Every inquiry lands in the same place, sorted by what it’s about."
+    }
+  };
+
+  var key = new URLSearchParams(location.search).get("p") || location.hash.slice(1);
+  var entry = BLURBS[key];
+  if (entry) {
+    document.getElementById("slot-label").innerHTML = entry.label + " &middot; in your full site";
+    document.getElementById("slot-blurb").textContent = entry.blurb;
+    document.title = entry.label.replace("&amp;","&") + " (taking form) — Rev. Christy Snow";
+  }
+})();
+</script>
+</body>
+</html>
